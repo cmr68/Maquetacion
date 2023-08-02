@@ -1,0 +1,100 @@
+.areas{
+    width: 60vw;
+    height: 60vh;
+
+    display: grid;
+
+    grid-template-areas: 
+                        'header header imagen imagen'
+                        'centro centro centro centro'
+                        'footer footer footer footer';
+    text-align: center;
+    line-height: 35px;
+}
+.header{
+    grid-area: header;
+    background-color: rgb(168, 9, 9);
+    color: white;
+}
+.imagen{
+    grid-area: imagen;
+    background-color: rgb(99, 7, 7);
+    color: white;
+}
+.centro{
+    grid-area: centro;
+    background-color: rgb(251, 251, 251);
+    color: rgb(7, 7, 7);
+
+    display: grid;
+    grid-template-areas:  'asides contenidoDer contenidoDer'
+                          'asides contenidoDer contenidoDer'
+                          'asides contenidoDer contenidoDer';
+    height: 40vh;
+}
+    .asides{
+        grid-area: asides;
+        background-color: rgb(255, 98, 0);
+        grid-template-areas: 'aside'
+                             'vacio'
+                             'aside2';
+        height: 44vh;
+
+        /* estilo flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+        .aside{
+            grid-area: aside;
+            background-color: white;
+            color: rgb(255, 98, 0);
+            height: 11vh;
+            width: 95%;
+        }
+        .vacio{
+            grid-area: vacio;
+            height: 9vh;
+        }
+        .aside2{
+            grid-area: aside2;
+            background-color: white;
+            color: rgb(255, 98, 0);
+            height: 11vh;
+            width: 95%;
+        }
+    .contenidoDer{
+        grid-area: contenidoDer;
+        background-color: rgb(238, 53, 16);
+        color: white;
+        height: 100%;
+        display: grid;
+        grid-template-areas: 'contenido'
+                             'texto';
+        height: 44vh;
+        /* estilos flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+        .contenido{
+            grid-area: contenido;
+            border: white solid 1px;
+            height: 20vh;
+            width: 95%;
+        }
+        .texto{
+            grid-area: texto;
+            border: white solid 1px;
+            height: 20vh;
+            width: 95%;
+        }
+.footer{
+    grid-area: footer;
+    background-color: rgb(99, 7, 7);
+    color: white;
+    
+}
