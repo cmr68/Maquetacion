@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="reto2.js">
   </head>
   <body >
     <!-- NAVAR  -->
@@ -36,11 +37,12 @@
               </li>
             </ul>
             
-            <button type="btn btn-light">CARRITO</button>
-            
+            <button id="carrito" class="btn btn-light" >CARRITO</button>
+
           </div>
         </div>
       </nav>
+      <div id="carrito-contenido" style="display: none;"></div>
 
       <!-- CONTAINER -->
     <div class="container ">
@@ -55,7 +57,7 @@
               <h5 class="card-title">Pantalón suelto gris</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 20€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="pantalonGris" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
@@ -68,7 +70,7 @@
               <h5 class="card-title">Vestido Túnico</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 18€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="vestidoTunico" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
@@ -159,7 +161,7 @@
       </div>
     </div>
 
-    
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     </body>
   </html>
