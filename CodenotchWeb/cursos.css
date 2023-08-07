@@ -10,8 +10,6 @@ body{
     flex-direction: column;
     justify-content: center;
     /* min-height: 100vh; */
-    background-color: blue;
-    background-image: url("espiral.png"); 
     background-size: cover; /* Ajustar la imagen para cubrir todo el fondo */
     background-position: center; /* Posicionar la imagen en el centro del fondo */
     
@@ -31,6 +29,7 @@ body{
         flex-direction: row;
         justify-content: space-between;
         padding: 15px;
+        background-color: blue;
     }
         .text{
             display: flex;
@@ -47,3 +46,86 @@ body{
                 margin-top: 30px;
             }
 
+/* CURSOS  */
+.padreCursos{
+    width: 90vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 60px;
+    color: blue;
+    text-align: center;
+}
+
+h2{
+    font-size: 40px;
+    color: black;
+}
+
+
+h3{
+    font-size: 40px;
+    color: blue;
+}
+
+p{
+    font-size: 30px;
+    color: black;
+    margin-top: 20px;
+}
+.developer{
+    width: 45vw;
+    margin-right: 100px;
+}
+
+.data{
+    width: 45vw;
+}
+.curso3{
+    margin-top: 160px;
+}
+    .full{
+        border: blue 4px double;
+        border-radius: 10px;
+        margin-top: 90px;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .part{
+        border: blue 4px double;
+        border-radius: 10px;
+        margin-top: 50px;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
+    .footer{
+        width: 100vw;
+        height: 8vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        background-color: black;
+    }
+        .imgFooter{
+            width: 70px;
+            margin-right: 20px;
+        }
+        .imgFooter_tw{
+            width: 40px;
+            margin-top: 10px;
+            margin-right: 40px;
+        }
