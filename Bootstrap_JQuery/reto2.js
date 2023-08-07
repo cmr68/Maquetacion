@@ -17,18 +17,20 @@ jQuery(() => {
     //Darle un id a CARRITO 
     //recorrer array en CARRITO para mostrar lista de 
     //prendas y sume el total de los precios y lo muestre(.apped)
-    $("#carrito").on("click",() => {
-        $("#carrito-contenido").empty();
+    $("#carritoBT").on("click",() => {
+        $("#listaCompra").modal("show");
         let total = 0;
         for(prenda of array){
-            total += prenda.price;
-
+            $("#total").append("PRENDA: " + prenda.type + prenda.price + "€")
             //Elemento <p> con nombre y precio
-            let item = $("<p>").text("PRENDA: " + prenda.type + prenda.price + "€");
+            // let item = $("<p>").text("PRENDA: " + prenda.type + prenda.price + "€");
             //Agregar elemento al contenedor
-            $("#carrito-contenido").append(item);
+            // $("#carrito-contenido").append(item);
+
+            total += prenda.price;
         }
-        $("#carrito-contenido").append($("<p>").text("TOTAL COMPRA: " + total + "€"))
-        $("#carrito-contenido").toggle();
+        $("#total").append("<p> TOTAL COMPRA: " + total + "€</p>");
+        // $("#carrito-contenido").toggle();
+        console.log(array);
     })
 });
