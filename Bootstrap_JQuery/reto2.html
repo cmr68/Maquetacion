@@ -6,7 +6,7 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <link rel="stylesheet" href="reto2.js">
+    <script src="reto2.js"></script>
   </head>
   <body >
     <!-- NAVAR  -->
@@ -53,12 +53,13 @@
         <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-      <div class="modal-body" id="total">
+      <div class="modal-body" id="total" >
         
       </div>
-      <div class="modal-footer">
+      <div class="modal-footer"  style="--bs-columns: 4; --bs-gap: 5rem;">
+        <div id="list" class="btn text-danger " ></div>
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <button type="button" class="btn btn-primary">Comprar</button>
       </div>
     </div>
   </div>
@@ -104,7 +105,7 @@
               <h5 class="card-title">Falda Mid Print</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 12€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="faldaMid" type="button" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
@@ -117,11 +118,10 @@
               <h6 class="card-title">Cardigan Largo Rayas</h6>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 18€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="cardigan" type="button" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
-
       </div>
 
       <!-- ROW 2 -->
@@ -135,7 +135,7 @@
               <h5 class="card-title">Falda Mini Zebra</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 15€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="faldaMin" type="button" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
@@ -148,7 +148,7 @@
               <h5 class="card-title">Mono Overol</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 26€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="monoOv" type="button" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
@@ -161,7 +161,7 @@
               <h5 class="card-title">Vestido Jersey</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 25€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="vetidoJe" type="button" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
@@ -174,11 +174,10 @@
               <h5 class="card-title">Pantalón Ancho</h5>
               <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
               <p class="precio"> 20€</p>
-              <a href="#" class="btn btn-primary">Añadir al carrito</a>
+              <button id="pantalonA" type="button" class="btn btn-dark">Añadir al carrito</button>
             </div>
           </div>
         </div>
-
       </div>
     </div>
 

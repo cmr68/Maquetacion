@@ -1,36 +1,53 @@
 let pantalonGris = {type: "Pantalón suelto gris", price: 20};
 let vestidoTunico = {type: "Vestido Túnico", price: 18}
+let faldaMid = {type: "Falda Mid Print", price: 12}
+let cardigan = {type: "Cardigan Largo Rayas", price: 18}
+let faldaMin = {type: "Falda Mini Zebra", price: 15}
+let monoOv = {type: "Mono Overol", price: 26}
+let vetidoJe = {type: "Vestido Jersey", price: 25}
+let pantalonA = {type: "Pantalón Ancho", price: 20}
 let array = [];
 
 
 jQuery(() => {
     
-    //Añade en el array el pantalon gris cuando haga click en "Añadir al carrito"
+    //Añade en el array las prendas cuando haga click en "Añadir al carrito"
     $("#pantalonGris").on("click",() => {
         array.push(pantalonGris);
     });
 
-    //Añade en el array el vestido tunico cuando haga click en "Añadir al carrito"
     $("#vestidoTunico").on("click",() => {
         array.push(vestidoTunico);
     });
-    //Darle un id a CARRITO 
-    //recorrer array en CARRITO para mostrar lista de 
-    //prendas y sume el total de los precios y lo muestre(.apped)
+
+    $("#faldaMid").on("click",() => {
+        array.push(faldaMid);
+    });
+    $("#cardigan").on("click",() => {
+        array.push(cardigan);
+    });
+    $("#faldaMin").on("click",() => {
+        array.push(faldaMin);
+    });
+    $("#monoOv").on("click",() => {
+        array.push(monoOv);
+    });
+    $("#vetidoJe").on("click",() => {
+        array.push(vetidoJe);
+    });
+    $("#pantalonA").on("click",() => {
+        array.push(pantalonA);
+    });
+    
+
     $("#carritoBT").on("click",() => {
         $("#listaCompra").modal("show");
         let total = 0;
         for(prenda of array){
-            $("#total").append("PRENDA: " + prenda.type + prenda.price + "€")
-            //Elemento <p> con nombre y precio
-            // let item = $("<p>").text("PRENDA: " + prenda.type + prenda.price + "€");
-            //Agregar elemento al contenedor
-            // $("#carrito-contenido").append(item);
+            $("#total").append("PRENDA: " + prenda.type + " " +prenda.price + "€<br>")
 
             total += prenda.price;
         }
-        $("#total").append("<p> TOTAL COMPRA: " + total + "€</p>");
-        // $("#carrito-contenido").toggle();
-        console.log(array);
+        $("#list").append("<p> TOTAL COMPRA: " + total + "€</p>");
     })
 });
