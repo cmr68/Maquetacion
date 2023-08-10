@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Codenotch</title>
-    <link rel="stylesheet" href="landing.css">
+    <link rel="stylesheet" href="contacto.css">
     <link rel="tab icon" href="img/logo-icono.jpg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Josefin+Sans&family=Russo+One&display=swap');
@@ -25,52 +25,45 @@
             <a href="contacto.html" class="link">Contacto</a>
         </div>
     </nav>
-
-    <header class="header">
-        <!-- Texto publicitario  -->
-        <div class="contenido">
-            <!-- Descubre el camino hacia el éxito con Codenotch -->
-            <div class="frase1">
-                <h1 class="titulo">Descubre el camino hacia el <span class="exito">exito</span></h1>
-                <h1 class="con">con <span class="codenotch">Codenotch </span></h1>
-            </div>
+<!-- contenido -->
+    <div class="contacto__div">
+        <!-- <header class="header"> -->
+            <h1 class="contacto__text1">
+                ¿Dudas? Normal, habla con un experto. <br><br>
+            </h1>
+        <!-- </header> -->
+        <h3 class="contacto__text2">
+            Déjanos tus datos y uno de nuestros asesores se pondrá en
+            contacto contigo. Sin spam, sin compromiso.<br><br>
+        </h3>
+    </div>
+            <form action="" class="contacto__div2">
+                <div class="col1">Datos
+                    <input type="text" name="name" placeholder="Nombre*" required data-name="name">
+                    <input type="text" name="lastname" placeholder="Apellidos*" required data-name="lastname">
+                    <input type="text" name="phone" placeholder="Teléfono*" required data-name="phone">
+                    <input type="text" name="email" placeholder="Correo*" required data-name="email">    
+                </div>
+                <div class="col2">
+                    <div class="mensaje">
+                        <label for="msg">Mensaje*</label>
+                        <textarea name="msg" id="" cols="30" rows="10"></textarea>    
+                    </div>
+                    <div class="check">
+                        <div class="politica">
+                            <input type="checkbox" name="politicy">
+                            <label for="checkbox">He leído y acepto la política de privacidad y las condiciones*</label>
+                        </div>
+                        <button class="contacto__button">ESPERO VUESTRA LLAMADA</button>
+                    </div>
+                </div>
+            </form>
+        <!-- </div> -->
     
-            <!-- Donde aprender es sólo el principio -->
-            <div class="frase2">
-                <h3 class="frase2h">DONDE APRENDER ES SÓLO</h3>
-                <h3 class="frase2_2">EL PRINCIPIO</h3>
-            </div>
-        </div>
 
-        <div class="promoCurso">
-            <div class="programacion">
-                <img class="flecha" src="img/flecha.png" alt="">
-                <h2>Programación Web Full Stack</h2>
-            </div>
 
-            <div class="data">
-                <img class="flecha" src="img/flecha.png" alt="">
-                <h2>Data Analytics</h2>
-            </div>
-            
-        </div> 
-    </header>
-            
-    <div class="banner">
-        <p class="banner_text">Abierto el plazo de inscripción. ¡No te quedes sin tu plaza! </p>
-    </div>
-            
-        
 
-    <!-- Alumnos trabajan en: -->
-    <div class="empresas">
-        <div>
-            <h4>Nuestros alumnos trabajan en: </h4>
-        </div>
-        <div class="emp">
-            <img src="img/ikea.png" alt="">
-        </div>
-    </div>
+
 
     <!-- Footer -->
     <footer class="footer">

@@ -3,86 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cursos Codenotch</title>
     <link rel="stylesheet" href="cursos.css">
+    <link rel="tab icon" href="img/logo-icono.jpg">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Josefin+Sans&family=Russo+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,900;1,800&family=Josefin+Sans&family=Russo+One&display=swap');
     </style>
 </head>
 <body>
-    <main class="padre">
-         <!-- MENÚ -->
-         <nav class="nav">
-            <div class="imagen">
-                <a href="./landing.html" class="landing">
-                    <img src="Group-23@2x.png" alt="">
-                </a>
-            </div>
-            <div class="text">
-                <a href="cursos.html" class="cursos">Cursos</a>
-                <a href="" class="equipo">Equipo</a>
-                <a href="" class="contacto">Contacto</a>
-            </div>
-        </nav>
+    <!-- MENÚ -->
+    <nav class="nav">
+        <div class="navImg">
+            <a href="./landing.html" class="landing">
+                <img src="img/Group-23@2x.png" alt="">
+            </a>
+        </div>
+        <div class="navLinks">
+            <a href="cursos.html" class="link">Cursos</a>
+            <a href="equipo.html" class="link">Equipo</a>
+            <a href="contacto.html" class="link">Contacto</a>
+        </div>
+    </nav>
 
-        <!--CURSO 1 - FULL TIME  -->
-        <div class="padreCursos">
-            <h1 class="developer"> DESARROLLO WEB Y APLICACIÓN MOVIL 
-                <div class="curso1"> 
-                    <div class="full">
-                        <h2>FULL TIME | PRESENCIAL O REMOTO</h2>
-                        <h3>Precio: 7.000€</h3>
-                        <p>Plazas limitadas</p>
-                        <p class="text">El curso tendrá una duración de 12 semanas de lunes a viernes de 9:30h a 18:00h, en formato presencial o remoto</p>
-                        <p>Próxima convocatoria: 4 de septiembre </p>
-                    </div>
-                </div>
-                <div class="curso2">
-                    <div class="part">
-                        <h2>PART TIME |  REMOTO</h2>
-                        <h3>Precio: 7.000€</h3>
-                        <p>Plazas limitadas</p>
-                        <p class="text">El curso tendrá una duración de 12 semanas de lunes a viernes de 9:30h a 18:00h, en formato presencial o remoto</p>
-                        <p>Próxima convocatoria: 4 de septiembre </p>
-                    </div>
-                </div>
-            </h1>
-            
-            <h1 class="data"> DATA ANALYTICS                                           
-                <div class="curso3">
-                    <div class="full">
-                        <h2>FULL TIME | PRESENCIAL O REMOTO</h2>
-                        <h3>Precio: 7.000€</h3>
-                        <p>Plazas limitadas</p>
-                        <p class="text">El curso tendrá una duración de 12 semanas de lunes a viernes de 9:30h a 18:00h, en formato presencial o remoto</p>
-                        <p>Próxima convocatoria: 4 de septiembre </p>
-                    </div>
-                </div>
-                <div class="curso4">
-                    <div class="part">
-                        <h2>PART TIME | REMOTO</h2>
-                        <h3>Precio: 7.000€</h3>
-                        <p>Plazas limitadas</p>
-                        <p class="text">El curso tendrá una duración de 12 semanas de lunes a viernes de 9:30h a 18:00h, en formato presencial o remoto</p>
-                        <p>Próxima convocatoria: 4 de septiembre </p>                </div>
-                </div>
-            </h1>
+<!-- CURSOS -->
+    <div class="cursos">
+        <div class="cursos__bootcamp">
+            <div class="bootcamp__title">
+                <h2 class="title__line">Bootcamp de</h2>
+                <h2 class="title__line"><span class="word__color">Desarrollo Web y Móvil</span></h2>
+            </div>
+
+            <p class="bootcamp__info">
+                Nuestro Bootcamp de Desarrollo Web y Móvil Full-Time
+                es un curso intensivo de programación, online o presencial,
+                y completamente práctico que te convertirá en un Programador
+                Junior Full-Stack para añadir valor en la empresa desde el
+                primer día.
+            </p>
+
+            <button class="bootcamp__button">
+                <a href="./contacto.html" class="button__link">Pide información</a>
+            </button>
+        </div>
+
+        <div class="cursos__bootcamp">
+            <div class="bootcamp__title">
+                <h2 class="title__line">Bootcamp de</h2>
+                <h2 class="title__line"><span class="word__color">Data Analytics</span></h2>
+            </div>
+
+            <p class="bootcamp__info">
+                Nuestro Bootcamp de Data Analytics es un curso intensivo,
+                online o presencial, y completamente práctico que te
+                convertirá en un Científico de Datos para añadir valor
+                en la empresa desde el primer día.
+            </p>
+
+            <button class="bootcamp__button">
+                <a href="./contacto.html" class="button__link">Pide información</a>
+            </button>
+        </div>
     </div>
+
 
     <!-- Footer -->
-    <div class="footer">
-        <a href="https://www.instagram.com/codenotchmad/?hl=es" >
-            <img class="imgFooter" src="instagram.png" alt="">
-        </a>    
-        <a href="https://www.facebook.com/codenotchMAD/" >
-            <img class="imgFooter" src="https://static.vecteezy.com/system/resources/previews/018/930/481/non_2x/facebook-logo-facebook-icon-transparent-free-png.png" alt="">
-        </a>   
-        <a href="https://www.facebook.com/codenotchMAD/" >
-            <img class="imgFooter_tw" src="https://www.aranleon.com/wp-content/uploads/2017/01/twitter.png" alt="">
-        </a>
-    </div>
-    </main>
+    <footer class="footer">
+        <img src="img/Group-23@2x.png" alt="logo codenotch" class="footerLogo">
+
+        <div class="footerRrss">
+            <a href="https://www.facebook.com/codenotchMAD/" class="facebook"><img src="img/icono-facebook.png" alt="icono facebook" class="facebook"></a>
+            <a href="https://twitter.com/CodenotchMAD" class="twitter"><img src="img/icono-twitter.png" alt="icono twitter" class="twitter"></a>
+            <a href="https://www.linkedin.com/school/codenotch/" class="linkedin"><img src="img/icono-linkedin.png" alt="icono linkedin" class="linkedin"></a>
+            <a href="https://www.instagram.com/codenotchmad/?hl=es" class="instagram"><img src="img/icono-instagram.png" alt="icono instagram" class="instagram"></a>
+        </div>
+
+        <p class="footerCopyrigth">© Codenotch 2021 - 2023 | All rights reserved</p>
+    </footer>
 
 </body>
 </html>

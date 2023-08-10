@@ -1,0 +1,146 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+ 
+}
+    .nav{
+        width: 100vw;
+        height: 11vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+        position: fixed;
+    }
+        .navLinks{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            .link{
+                color: white;
+                padding: 15px 40px;
+            }
+            .link:hover{
+                color: rgb(35, 246, 147);
+            }
+            .landing img{
+                width: 200px;
+            }
+
+/* CONTENIDO CONTACTO */
+
+body{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.5px;
+    
+}
+.contacto__div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contacto__text1{
+    background-image: url("img/fondo.png");
+    background-size: cover; 
+    background-position: center;
+    height: 23vh;
+    width: 100%;
+    padding-top: 115px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;   
+}
+
+.contacto__text2{
+    padding-top: 20px;
+}
+
+.contacto__div2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    /* gap: 20px; */
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 50vh;
+}
+.col1 input{
+    height: 50px;
+    width: 45%;
+    margin-bottom: 20px;
+    margin-top: 8px;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 50vh;
+}
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+        .mensaje textarea{
+            height: 30vh;
+            width: 35vw;
+        }
+    .check{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+        .contacto__button{
+            width: 30vw;
+            padding: 8px;
+            margin-top: 10px;
+            border: none;
+            background-color: #0000ff;
+            color: white;
+            text-shadow: 0.5px 1px 1px black;
+        }
+        .contacto__button:active {
+            background-color: #10f294;
+            transform: translateY(4px);
+        }
+.footer{
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+    .footerLogo{
+        height: 25px;
+    }
+    .footerRrss{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+    }
+    .footerCopyrigth{
+        color: white;
+        font-size: 11px;
+    }
