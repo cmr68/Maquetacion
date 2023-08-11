@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="tab icon" href="img/logo.png">
+
+</head>
+<body>
+    <header>
+        <div class="logoNav">
+            <img src="img/logoNav.png" alt="">
+        </div>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#places">Places</a></li>
+                <li><a href="#company">Quienes somos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main> <!-- en columnas -->
+        <!-- HOME -->
+        <div class="home">
+            <img src="img/fondoHeader.gif" alt="" class="fondoHeader">
+            <div class="text_header">
+                <h1>Alarga tu verano <h2>¡aprovechalo al máximo!</h2></h1>
+            </div>
+
+            <form class="myform" id="myform"><!-- en columnas -->
+                <div class="row1"><!-- en fila -->
+                    <input type="text" id="destiny" placeholder="Destino">
+                    <input type="text" id="origin" placeholder="Origen">
+                    <input type="number" id="hosts" placeholder="Nº huéspedes">
+                    <button id="submitBtn" type="button" onclick="filter()">
+                        Filtrar
+                    </button>
+                </div>
+                <div class="row2"> <!-- en fila -->
+                    <input type="date" id="date" placeholder="Ida">
+                    <input type="date" id="date" placeholder="Vuelta">
+                    <input type="text" id="name" placeholder="Nombre">
+                    <input type="email" id="email" placeholder="email">
+                    <button id="submitBtn" type="button" onclick="sendData()">
+                        Solicitar info.
+                    </button>
+                    </div>
+            </form>
+            <!-- imprimirá las solicitudes que tengan Canarias, Mallorca o Galicia -->
+            <div id="printButton"></div>
+        </div>
+
+        <!-- PLACES -->
+        <div class="places" id="places"> <!-- en fila -->
+            <div class="rowPlace"> <!-- en columnas -->
+                <div class="tag">
+                    <img src="img/islandia.jpeg" alt="">
+                    <p class="tagText">REIKIAVIK <br> POR <strong>820€</strong></p>
+                </div>
+                <div class="tag">
+                    <img src="img/toronto.jpeg" alt="">
+                    <p class="tagText">TORONTO <br> POR <strong>1.820€</strong></p>
+                </div>
+                <div class="tag">
+                    <img src="img/praga.jpeg" alt="">
+                    <p class="tagText">PRAGA <br> POR <strong>520€</strong></p>
+                </div>
+            </div>
+            <div class="rowPlace"><!-- en columnas -->
+                <div class="tag">
+                    <img src="img/japon.jpeg" alt="">
+                    <p class="tagText">TOKIO <br> POR <strong>2.120€</strong></p>
+                </div>
+                <div class="tag">
+                    <img src="img/paris.avif" alt="">
+                    <p class="tagText">PARIS <br> POR <strong>820€</strong></p>
+                </div>
+                <div class="tag">
+                    <img src="img/viena.jpeg" alt="">
+                    <p class="tagText">VIENA <br> POR <strong>820€</strong></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- QUIENES SOMOS -->
+        <div class="quienesSomos">
+            <div class="descripcion">
+                <h1 class="nosotros">¿Quienes somos?</h1>
+                <p>En Travel, estamos aquí para convertir tus sueños de viaje en realidad. 
+                Como apasionados viajeros y expertos en destinos, nos dedicamos a crear 
+                experiencias únicas y personalizadas. Desde los destinos más icónicos hasta 
+                las joyas escondidas, te guiamos en cada paso del camino para asegurarnos de 
+                que cada viaje sea memorable y sin preocupaciones.
+
+                Nuestro compromiso es brindarte un servicio excepcional y opciones emocionantes. 
+                Queremos que cada viaje sea una historia para contar. Únete a nosotros y permite que 
+                Travel sea tu socio en la aventura.
+                
+                Descubre el mundo con nosotros.</p>
+            </div>
+            <div class="eligenos">
+                <h2 class="nosotros">¿Por qué nosotros</h2>
+                <p> Experiencias Únicas
+                    Destinos Exclusivos
+                    Atención Personalizada
+                    Expertos Locales
+                    Soporte Siempre
+                    Flexibilidad Total
+                    Calidad y Valor
+                    Sostenibilidad
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <script src="agenciaC.js"></script>
+</body>
+</html>
