@@ -12,7 +12,7 @@ const userData = () =>{
     }
 
     arrayData.push(userInfo);
-    // document.getElementById("myform").reset();
+    document.getElementById("myform").reset();
     console.log(arrayData);
     return arrayData;
 };
