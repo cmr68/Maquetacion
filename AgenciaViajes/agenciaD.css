@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.5px;
+    width: 100vw;
+
+}
+
+.nav{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1000; 
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+    .logoNav img{
+        width: 15%;
+        padding-left: 20px;
+    }
+    .navLinks{
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        font-size: 25px;
+        padding: 30px;
+        
+    }
+        .nav a{
+            padding-left: 60px;
+            text-decoration: none;
+            color: rgb(0, 155, 211);
+        }
+        .nav a:hover{
+            color: rgb(255, 119, 0);
+        }
+/******* IMAGEN CENTRAL Y TEXTO *******/
+main{
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .home{
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .textHome{
+        position: relative;
+        z-index: 2;
+        height: 40vh;
+        width: 70%;
+        color: white;
+        text-shadow: 1px 1px 2px black;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; 
+        align-items: center;
+    }
+    .textHome h1{
+        font-size: 100px;
+        letter-spacing: 18px;
+    }
+    .textHome h2{
+        font-size: 50px;
+        letter-spacing: 12px;
+        color: rgb(255, 255, 255);
+    }
+    .fondoHome{
+        width: 100%;
+        height: 100vh;
+        z-index: 1;
+        position: absolute;
+        padding-top: 4%;
+    }
+    .myform{
+        z-index: 8;
+        width: 70%;
+        height: 90vh;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 4px;
+    }
+        .row1 input,
+        .row2 input {
+            margin-right: 8px; /* Añade espacio a la derecha de los inputs */
+        }
+
+        .myform input{
+            width: 300px;
+            height: 60px;
+            font-size: 20px;
+        }
+        .myform button{
+            width: 300px;
+            height: 60px;
+            font-size: 30px;
+            background-color: rgb(0, 155, 211);
+            color: white;
+        }
+            .myform button:hover{
+                background-color: rgb(255, 119, 0);
+                color: blue;
+            }
+/* cuando se impriman solicitudes con Canarias, Mallorca o Galiia */
+
+.modal_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 1000; 
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 30px;
+    text-align: center;
+    opacity: 0;
+    margin-bottom: 10px;
+}
+.printButton{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 600px;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.show{
+    pointer-events: auto;
+    opacity: 1;
+}
+
+/* TARJETAS DE VIAJE  */
+.places{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 1em;
+    margin-bottom: 5em;
+}
+    .rowPlace{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 1em;
+    }
+    .tag{
+        width: 33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tag img{
+        width: 100%;
+        height: 300px;
+        opacity: 0.4;
+        z-index: 8;
+    }
+    .tagText{
+        position: absolute;
+        z-index: 9;
+        font-size: 2rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 2em;
+        color: white;
+        text-align: center;
+        text-shadow: 2px 2px black;
+    }
+    .places  h1 {
+        text-align: center;
+        text-shadow: 1px 1px 2px;
+        font-size: 50px;
+        margin: 2em;
+      }
+
+/* ¿QUIENES SOMOS */
+.quienesSomos{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-bottom: 100px;
+    padding-top: 100px;
+}
+.descripcion, .eligenos {
+    width: 45%;
+}
+    .descripcion p, .eligenos p{
+        text-align: center;
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    .descripcion p{
+        line-height: 35.5px;
+    }
+    .nosotros{
+        text-align: center;
+        font-size: 50px;
+        text-shadow: 1px 1px 2px rgb(0, 94, 129);
+        color: rgb(0, 155, 211)
+    }

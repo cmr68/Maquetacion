@@ -1,0 +1,251 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+    font-family: 'SoulBillani';
+    src: url(./fonts/SoulBillani.otf);
+}
+/* CONTENIDO */
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 90vw;
+    height: 100vh;
+}
+    .home{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 30px;
+        gap: 60px;
+    }
+    .capturaMovil{
+        display: flex;
+        justify-content: flex-end;
+        width: 31%;
+    }
+        .capturaMovil img{
+            width: 100%;
+            margin-top: -20px;
+        }
+        
+        .homeLogin{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 28%;
+            margin-left: -30px;
+            margin-top: -20px;
+        }
+        .login{
+            border: 1px solid rgb(196, 193, 193);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .loginH1{
+            transform: scale(0.7);
+            width: 90%;
+            padding: 20px;
+        }
+        .loginForm{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+            .inputs{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: 10px;
+
+            }
+            input{
+                border: 1px solid rgb(219, 219, 219);
+                border-radius: 5px;
+                color: black;
+                font: inherit;
+                font-size: 15px;
+                height: 36px;
+                width: 260px;
+                padding-left: 10px;
+            }
+            input::placeholder{
+                color: rgb(115,115,115);
+                font-size: 13px;
+                padding-left: 10px;
+            }
+        .loginButton{
+            text-align: center;
+            height: 36px;
+            width: 260px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4cb5f9;
+            font-size: 19px;
+            /* Text */
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .loginButton:hover{
+            background-color: #0195f7;
+        }
+    .loginLine{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-family: inherit;
+        font-weight: bold;
+        font-size: 14px;
+    }
+        .line{
+            background-color: rgb(219, 219, 219);
+            height: 1px;
+            width: 105px;
+        }
+        .or{
+            color: rgb(219, 219, 219);
+            padding: 10px;
+        }
+        .loginFace{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+            .icono{
+                transform: scale(0.6);
+            }
+            .faceText{
+                font-family: Arial, Helvetica, sans-serif;
+                color: #3b5998;
+                font-weight: bold;
+                font-size: 15px;
+            }
+    .loginPassword{
+        font-family: Arial, Helvetica, sans-serif;
+        color: #3b5998;
+        font-size: 14px;
+        padding: 10px;
+    }
+    .register{
+        border: 1px solid rgb(196, 193, 193);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        padding: 20px 79px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+        height: 60px;
+    }
+        .registerLink{
+            color: #4cb5f9;
+            font-weight: bold;
+        }
+    .download{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        padding-top: 20px;
+    }
+    .downloadButtons{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .downloadButtons{
+        padding-top: 10px;
+    }
+    .downloadButtons img{
+        width: 42%;
+    }
+    /* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    font-size: 13px;
+    gap: 10px;
+}
+    .footerLink{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        color: #8D949E;
+
+    }
+    .footerLink:hover{
+        text-decoration: underline blue;
+    }
+    .footerDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 13px;
+    }
+        .languages{
+            color: #8D949E;
+            text-shadow: 0.02px #606770;
+            border: none;
+            background-color: #fafafa;
+        }
+        .copyrigth{
+            color: #8D949E;
+            text-shadow: 0.02px #606770;
+        }
+
+/*----------Media-Queries---------*/
+@media screen and (max-width: 875px) {
+    .capturaMovil{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .homeLogin{
+        width: 100%;
+    }
+    .login{
+        border: none;
+    }
+    .register{
+        border: none;
+    }
+}

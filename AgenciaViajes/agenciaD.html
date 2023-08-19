@@ -5,28 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Travel</title>
     <link rel="tab icon" href="img/logo.png">
+    <link rel="stylesheet" href="agenciaD.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@700&family=Josefin+Sans&family=Russo+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,900;1,800&family=Josefin+Sans&family=Russo+One&display=swap');
+    </style>
 
 </head>
 <body>
-    <header>
+    
+    <nav class="nav">
         <div class="logoNav">
             <img src="img/logoNav.png" alt="">
         </div>
-        <nav class="nav">
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#places">Places</a></li>
-                <li><a href="#company">Quienes somos</a></li>
-            </ul>
-        </nav>
-    </header>
+        <div class="navLinks">
+            <a href="#home">Home</a>
+            <a href="#places">Places</a>
+            <a href="#company">Quienes somos</a>
+        </div>    
+    </nav>
 
     <main> <!-- en columnas -->
         <!-- HOME -->
-        <div class="home">
-            <img src="img/fondoHeader.gif" alt="" class="fondoHeader">
-            <div class="text_header">
-                <h1>Alarga tu verano <h2>¡aprovechalo al máximo!</h2></h1>
+        <div class="home" id="home">
+            <img src="img/fondoHeader.gif" alt="" class="fondoHome">
+            <div class="textHome">
+                <h1>Alarga tu verano </h1>
+                <h2>¡aprovechalo al máximo!</h2>
             </div>
 
             <form class="myform" id="myform"><!-- en columnas -->
@@ -34,26 +39,32 @@
                     <input type="text" id="destiny" placeholder="Destino">
                     <input type="text" id="origin" placeholder="Origen">
                     <input type="number" id="hosts" placeholder="Nº huéspedes">
-                    <button id="submitBtn" type="button" onclick="filter()">
+                    <button id="submitBtn" type="button" class="filter" onclick="filter()">
                         Filtrar
                     </button>
+                    <!-- imprimirá las solicitudes que tengan Canarias, Mallorca o Galicia -->
+                    <div class="modal_container" id="modal_container">
+                        <div id="printButton" class="printButton">
+                            <button id="cerrar" class="close">Close</button>
+                        </div>
+                    </div>
+
                 </div>
                 <div class="row2"> <!-- en fila -->
-                    <input type="date" id="date" placeholder="Ida">
-                    <input type="date" id="date" placeholder="Vuelta">
+                    <input type="date" id="date1" placeholder="Ida">
+                    <input type="date" id="date2" placeholder="Vuelta">
                     <input type="text" id="name" placeholder="Nombre">
-                    <input type="email" id="email" placeholder="email">
-                    <button id="submitBtn" type="button" onclick="sendData()">
+                    <button id="submitBtn" type="button" class="sendData" onclick="sendData()">
                         Solicitar info.
                     </button>
                     </div>
             </form>
-            <!-- imprimirá las solicitudes que tengan Canarias, Mallorca o Galicia -->
-            <div id="printButton"></div>
+            
         </div>
 
         <!-- PLACES -->
         <div class="places" id="places"> <!-- en fila -->
+            <h1>TOUR POPULARES</h1>
             <div class="rowPlace"> <!-- en columnas -->
                 <div class="tag">
                     <img src="img/islandia.jpeg" alt="">
@@ -85,9 +96,9 @@
         </div>
 
         <!-- QUIENES SOMOS -->
-        <div class="quienesSomos">
+        <div class="quienesSomos" id="company">
             <div class="descripcion">
-                <h1 class="nosotros">¿Quienes somos?</h1>
+                <h1 class="nosotros">¿Quienes somos?</h1><br><br>
                 <p>En Travel, estamos aquí para convertir tus sueños de viaje en realidad. 
                 Como apasionados viajeros y expertos en destinos, nos dedicamos a crear 
                 experiencias únicas y personalizadas. Desde los destinos más icónicos hasta 
@@ -98,23 +109,23 @@
                 Queremos que cada viaje sea una historia para contar. Únete a nosotros y permite que 
                 Travel sea tu socio en la aventura.
                 
-                Descubre el mundo con nosotros.</p>
+                Descubre el mundo con nosotros.</p><br>
             </div>
             <div class="eligenos">
-                <h2 class="nosotros">¿Por qué nosotros</h2>
-                <p> Experiencias Únicas
-                    Destinos Exclusivos
-                    Atención Personalizada
-                    Expertos Locales
-                    Soporte Siempre
-                    Flexibilidad Total
-                    Calidad y Valor
-                    Sostenibilidad
+                <h2 class="nosotros">¿Por qué nosotros?<br><br></h2>
+                <p> Experiencias Únicas<br><br>
+                    Destinos Exclusivos<br><br>
+                    Atención Personalizada<br><br>
+                    Expertos Locales<br><br>
+                    Soporte Siempre<br><br>
+                    Flexibilidad Total<br><br>
+                    Calidad y Valor<br><br>
+                    Sostenibilidad<br><br>
                 </p>
             </div>
         </div>
     </main>
 
-    <script src="agenciaC.js"></script>
+    <script src="agenciaD.js"></script>
 </body>
 </html>
