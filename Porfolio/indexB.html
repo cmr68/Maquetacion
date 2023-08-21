@@ -6,26 +6,32 @@
   <link rel="stylesheet" href="styleB.css">
   <title>Mi Portafolio</title>
 </head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">Conóceme</a></li>
-        <li><a href="#technologies">Tecnologías</a></li>
-        <li><a href="#education">Formación</a></li>
-      </ul>
-    </nav>
-  </header>
 
+<header>
+  <nav>
+    <ul>
+      <li><a href="#presentation">Conóceme</a></li>
+      <li><a href="#technologies">Tecnologías</a></li>
+      <li><a href="#proyects">Proyectos</a></li>
+      <li><a href="#contact">Contactame</a></li>
+    </ul>
+  </nav>
+</header>
+
+<body>
   <section id="presentation" class="presentation">
     <div class="divPresentation">
-        <img src="img/foto sin fondo.png" alt="Foto de perfil" class="zoomIn">
+        <img src="img/perfil.jpg" alt="Foto de perfil" class="zoomIn">
         <div class="text-pres">
             <h1 class="fadeIn">¡Hola! Soy <strong>Cristina Muñoz Rico</strong></h1>
             <p class="fadeIn">¡Es un placer presentarme y compartir contigo un poco sobre mí! Si tuviera que definirme en dos palabras, serían <span class="highlight">optimismo</span> y <span class="highlight">tenacidad</span>. Creo firmemente que no hay desafío que no pueda superarse con esfuerzo y trabajo constante. Siempre estoy en busca de nuevos retos que me permitan crecer y aprender, porque cada experiencia nos brinda la oportunidad de mejorar.</p>          
-        </div>
+            <p class="fadeIn">Mi optimismo y tenacidad no solo se reflejan en mi trabajo, sino también en mis intereses y pasatiempos. Comencé siendo bartender, maitre, bailarina internacional, comercial y directora de ventas, lo que me ha dado la habilidad de adaptarme a diversas situaciones y personas.</p>
+            <p class="fadeIn">Estoy emocionada por las oportunidades que el futuro tiene reservadas y por seguir desafiándome a mí misma para crecer y aprender. Si estás buscando a alguien que combine pasión, dedicación y habilidades técnicas en desarrollo Full Stack, ¡estaré encantada de contribuir a tu equipo! ¡Gracias por tomarte el tiempo de conocerme!</p>
+    
+         </div>
     </div>
   </section>
+
   <section id="technologies" class="page ">
     <div class="technologiesAll">
         <h2 class="fadeIn">Tecnologías</h2>
@@ -38,23 +44,36 @@
     </div>
   </section>
 
-  <section id="about" class="page">
-    <div class="aboutMe">
-      <h2>Sobre Mí</h2>
-      <div class="aboutText">
-        <p class="fadeIn">Mi optimismo y tenacidad no solo se reflejan en mi trabajo, sino también en mis intereses y pasatiempos. Comencé siendo bartender, maitre, bailarina internacional, comercial y directora de ventas, lo que me ha dado la habilidad de adaptarme a diversas situaciones y personas.</p>
-        <p class="fadeIn">Estoy emocionada por las oportunidades que el futuro tiene reservadas y por seguir desafiándome a mí misma para crecer y aprender. Si estás buscando a alguien que combine pasión, dedicación y habilidades técnicas en desarrollo Full Stack, ¡estaré encantada de contribuir a tu equipo! ¡Gracias por tomarte el tiempo de conocerme!</p>
+  <section id="proyects" class="page">
+    <div class="proyects">
+      <h2 class="fadeIn">Proyectos</h2>
+      <div class="imgProy">
+        <a href="https://github.com/cmr68/Maquetacion/tree/main/AgenciaViajes">
+          <img src="img/agencia.png" alt="">
+        </a>
+        <a href="https://github.com/cmr68/Maquetacion/tree/main/CodenotchWeb">
+          <img src="img/bootcamp.png" alt="">
+        </a>
+        <a href="https://github.com/cmr68/Maquetacion/tree/main/proyectoFinal">
+          <img src="img/peliculas.png" alt="">
+        </a>
+        <a href="https://github.com/cmr68/Maquetacion/tree/main/Instagram">
+          <img src="img/instagram.png" alt="">
+        </a>  
       </div>
     </div>
+  </section>
+
+  <section id="contact" class="page">
     <div class="contacto fadeIn"> 
-        <h2>Contactáctame</h2> 
-        <form>
-          <input id="name" name="name" placeholder="Introduce tu nombre" required>
-          <input id="mail" name="mail" placeholder="Introduce tu email" required>
-          <textarea id="message" name="message" placeholder="Introduce tu mensaje" required></textarea>
-          <button id="submit">Contactar</button>
-        </form>
-    </div>
+      <h2>Contactáctame</h2> 
+      <form>
+        <input id="name" name="name" placeholder="Introduce tu nombre" required>
+        <input id="mail" name="mail" placeholder="Introduce tu email" required>
+        <textarea id="message" name="message" placeholder="Introduce tu mensaje" required></textarea>
+        <button id="submit">Contactar</button>
+      </form>
+  </div>
   </section>
 
 
