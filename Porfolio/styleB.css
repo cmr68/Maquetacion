@@ -172,7 +172,6 @@ body {
   }
   .proyects{
     width: 100vw;
-    border: green 2px solid ;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -184,7 +183,6 @@ body {
   }
   .imgProy{
     width: 100%;
-    border: green 2px solid ;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
