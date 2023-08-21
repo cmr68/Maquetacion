@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMDb</title>
+
+    <!-- librería JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="styleC.css">
+    
+</head>
+<body onload="cargarDatos()">
+
+    <nav class="nav">
+        <a href=""><img src="img/logoImdb.png" alt="" class="logo"></a>
+        <ul class="links">
+            <li></li><a href="#home" class="fw-bold" >Home</a></li>
+            <li><a href="#sectionMovie" class="fw-bold" >Movies</a></li>
+            <li><a href="#addMovie" class="fw-bold" >Add Movie</a></li>
+            <li><a href="#selectProfessional" class="fw-bold" >Actors</a></li>
+            
+        </ul>
+    </nav>
+    
+    <!-- home -->
+    <div class="home" id="home">
+        <img src="img/fondo8.JPG" alt="" class="imgHome"> 
+        <h1>En <strong>IMBDb</strong> tendrás siempre a mano <br>tus <strong>películas y actores </strong>favoritos</h1>
+    </div>
+
+    <!-- listado películas -->
+    <div class="select">
+        <div class="sectionMovie" id="sectionMovie">
+            <h2 class="sectionTitle"> <strong>PELÍCULAS</strong></h2>
+            <!-- imprimirá las películas desde el .js -->
+            <div class="movies" id="movies"></div> 
+
+            <!-- formulario -->
+            <div class="form" id="addMovie">
+                <form action="" class="addMovie" >
+                    <h2 class="rotulo">
+                        <strong>¡Añade una nueva película!</strong>
+                    </h2>
+                    <div class="inputs">
+                        <input type="text" id="input__titulo" placeholder="Título" class="input">
+                        <input type="text" id="input__año" placeholder="Año de estreno" class="input">
+                        <input type="text" id="input__reparto" placeholder="Reparto (separados por comas)" class="input">
+                        <input type="text" id="input__nacionalidad" placeholder="Nacionalidad" class="input">
+                        <input type="text" id="input__director" placeholder="Director" class="input">
+                        <input type="text" id="input__escritor" placeholder="Escritor" class="input">
+                        <input type="text" id="input__idioma" placeholder="Idioma" class="input">
+                        <input type="text" id="input__MCU" placeholder="¿Pertenece al MCU?(true o false)" class="input">
+                        <input type="text" id="input__nombreProtagonista" placeholder="Nombre del/la protagonista" class="input">
+                        <input type="text" id="input__productor" placeholder="Productor" class="input">
+                        <input type="text" id="input__distribuidor" placeholder="Destribuidor" class="input">
+                        <input type="text" id="input__genero" placeholder="Género" class="input">
+                        <input type="text" id="input__foto" placeholder="Imagen de la película (url)" class="input">
+                    </div>
+                    <div class="form_buttons">
+                        <button type="reset" id="buttons__button" class="btn-añadir btn btn-danger" onclick="addMovie()">Añadir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- listado actores -->
+        <div class="selectProfessional" id="selectProfessional">
+            <h2 class="sectionTitle"><strong>PROFESIONALES</strong></h2>
+            <!-- se añaden desde .js -->
+            <div class="professional" id="professional"></div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer">
+        <a href=""></a>
+    </footer>
+
+
+
+    <!-- JS Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    
+    <!-- scripts con las clases a importar -->
+    <script src="movie2.js"></script>
+    <script src="professional2.js"></script>
+    <!-- my script JS -->
+    <script src="./indexC.js"></script>
+</body>
+</html>
